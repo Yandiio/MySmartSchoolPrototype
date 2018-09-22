@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_light"
+        android:scaleType="fitXY"
+        android:src="@drawable/example2"
+        app:layout_constraintBottom_toTopOf="@+id/LinearBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/LinearBackground"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:background="#dedede"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/LinearNavbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/LinearNavbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LinearBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                app:srcCompat="@drawable/menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="MySmartSchool"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/layout_featurelist_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/LinearBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:id="@+id/ListMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/MyWorkFrame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp">
+
+                <ImageButton
+                    android:id="@+id/MyWorkButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mywork" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MyWorkButton"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="My Work" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/MyClassFrame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/SmartAbsenFrame"
+                android:layout_alignTop="@+id/MyWorkFrame">
+
+                <ImageButton
+                    android:id="@+id/MyClassButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myclass" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MyClassButton"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="My Class" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/MyTeacherFrame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/MyWorkFrame"
+                android:layout_below="@+id/MyWorkFrame"
+                android:layout_marginTop="15dp">
+
+                <ImageButton
+                    android:id="@+id/MyTeacherButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myteacher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MyTeacherButton"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="My Teacher" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/SmartAbsenFrame"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/MyWorkFrame"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageButton
+                    android:id="@+id/SmartAbsenButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/smartabsen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SmartAbsenButton"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="SmartAbsen" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<include-->
+        <!--layout="@layout/drawer_layout"-->
+        <!--&gt;</include>-->
+</android.support.constraint.ConstraintLayout>

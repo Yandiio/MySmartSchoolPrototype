@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:font="@font/aristotelica_display_bold_trial"
+        android:fontStyle="normal"
+        android:fontWeight="400"/>
+    <font android:font="@font/aristotelica_display_light_trial"
+        android:fontStyle="normal"/>
+    <font android:font="@font/aristotelica_display_regular_trial"
+        android:fontStyle="normal"/>
+</font-family>
